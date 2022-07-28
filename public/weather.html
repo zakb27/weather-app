@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href ='styles.css'>
+    <script type='text/javascript' src='config.js'></script>
+    <script type='text/javascript' src ='script.js' defer></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="enter_container">
+        <div class="upper">
+            <h1>What is the weather?</h1>
+        </div>
+        <div class="middle">
+            <form id='form'>
+                <input type="text" name="search-input" id="search-input" placeholder="Enter city..."/>
+                <button id="submit" value="Submit">Search...</button>
+            </form>
+        </div>
+        <div class="upper">
+            <button id="current_location">Use location</button>
+        </div>
+    </div>
+
+    <div class="display">
+        <div class="details">
+            <div class="important_details">
+                <div class="temp_container">
+                    <h2 class="bigger temp"></h2>
+                    <h5 class="smaller_location"></h5>
+                </div>
+                <div class="info">
+                    <h2 class="bigger weather"></h2>
+                    <h5 class="smaller weather_small"></h5>
+                </div>
+            </div>
+            <div class="minor_details">
+                <div class="minor">
+                    <h5>Feels like</h5>
+                    <p class="feels"></p>
+                </div>
+                <div class="minor">
+                    <h5>Humidity</h5>
+                    <p class="humidity"></p>
+                </div>
+                <div class="minor">
+                    <h5>Pressure</h5>
+                    <p class="pressure"></p>
+                </div>
+                <div class="minor">
+                    <h5>Lowest</h5>
+                    <p class="min"></p>
+                </div>
+                <div class="minor">
+                    <h5>Highest</h5>
+                    <p class="max"></p>
+                </div>
+            </div>
+        </div>
+        <p id="hello"></p>
+        <button id="switcher">Return</button>
+    </div>
+</div>
+</body>
+</html>
