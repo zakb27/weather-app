@@ -4,12 +4,12 @@
     margin:0;
     padding: 0;
 }
-
 body{
     background-color: #ADD8E6;
     height:100vh;
     width:100vw;
     font-family: 'Work Sans',sans-serif;
+
 }
 .container{
     display: flex;
@@ -26,8 +26,10 @@ body{
     padding:30px;
     text-align: center;
     display: flex;
+
     flex-direction: column;
     justify-content: space-evenly;
+    gap:75px;
 }
 
 .upper h1{
@@ -37,6 +39,107 @@ body{
 
 #search-input {
     border:none;
+    color:black;
+    text-align: center;
+    border-bottom: 2px solid white;
+    transition: border 0.3s ease;
+    outline: none;
+    width: 80%;
+    height:50px;
+    padding: 0.5em;
+    background: transparent;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+
+}
+#search-input::placeholder {
+    color: black;
+}
+#search-input:focus,#search-input:hover,#search-input:active{
+    border-bottom: 1px solid cadetblue;
     background-color: #ADD8E6;
-    color:white;
+}
+
+
+button{
+    padding:10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s all 0ms;
+    border: none;
+    background-color: #5cd5da;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1em;
+
+}
+button:hover{
+    border-radius: 10px;
+    transition: 0.3s all 0ms;
+}
+
+
+.display{
+    background-color: white;
+    text-align: center;
+    width:70%;
+    height:50%;
+    border-radius: 10px;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:50px;
+}
+
+.details{
+    display: grid;
+    height:100%;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    gap:10px;
+}
+
+.important_details{
+    grid-column: 1/6;
+    grid-row:1/2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    text-align: center;
+    align-items: center;
+}
+
+.bigger{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+.smaller{
+    font-size: 1.5rem;
+}
+
+.minor_details{
+    grid-column: 1/6;
+    grid-row:2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.minor_details h5{
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.minor_details p{
+    font-size: 1rem;
+}
+.end_button{
+    grid-row:3/4;
+   grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
